@@ -13,18 +13,16 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
-    
+    var animations = [String: CAAnimation]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set the view's delegate
         sceneView.delegate = self
         
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
-        
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene()
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -38,6 +36,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
         // Run the view's session
         sceneView.session.run(configuration)
+        loadAnimations()
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -46,7 +46,43 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
-
+    
+    func loadAnimations () {
+        // Load the character in the idle animation
+        let idleScene = SCNScene(named: "art.scnassets/Dancing.dae")!
+        
+        // This node will be parent of all the animation models
+        let node = SCNNode()
+        
+        // Add all the child nodes to the parent node
+        for child in idleScene.rootNode.childNodes {
+            node.addChildNode(child)
+        }
+        
+        // Set up some properties
+        node.position = SCNVector3(0, -1, -3)
+        node.scale = SCNVector3(0.005, 0.005, 0.005)
+        
+        // Add the node to the scene
+        sceneView.scene.rootNode.addChildNode(node)
+        
+        let sceneURL = Bundle.main.url(forResource: "art.scnassets/Dancing", withExtension: "dae")
+        let sceneSource = SCNSceneSource(url: sceneURL!, options: nil)
+        
+        if let animationObject = sceneSource?.entryWithIdentifier("Dancing", withClass: CAAnimation.self) {
+            // The animation will only play once
+            animationObject.repeatCount = 1
+            // To create smooth transitions between animations
+            animationObject.fadeInDuration = CGFloat(1)
+            animationObject.fadeOutDuration = CGFloat(0.5)
+            
+            sceneView.scene.rootNode.addAnimation(animationObject, forKey: "Dancing")
+            
+        }
+    }
+    
+    
+    
     // MARK: - ARSCNViewDelegate
     
 /*
