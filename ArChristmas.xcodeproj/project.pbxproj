@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48159ABE21BE75C200CB55DE /* ArDancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArDancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48159ABE21BE75C200CB55DE /* ArChristmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArChristmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48159AC121BE75C300CB55DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48159AC321BE75C300CB55DE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		48159AC521BE75C300CB55DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		48159AB521BE75C200CB55DE = {
 			isa = PBXGroup;
 			children = (
-				48159AC021BE75C200CB55DE /* ArDancing */,
+				48159AC021BE75C200CB55DE /* ArChristmas */,
 				48159ABF21BE75C200CB55DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		48159ABF21BE75C200CB55DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48159ABE21BE75C200CB55DE /* ArDancing.app */,
+				48159ABE21BE75C200CB55DE /* ArChristmas.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		48159AC021BE75C200CB55DE /* ArDancing */ = {
+		48159AC021BE75C200CB55DE /* ArChristmas */ = {
 			isa = PBXGroup;
 			children = (
 				48159AC121BE75C300CB55DE /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				48D1EB0521D4D32300346A16 /* spark.png */,
 				48D1EB0621D4D32300346A16 /* rainingSnow.scnp */,
 			);
-			path = ArDancing;
+			path = ArChristmas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		48159ABD21BE75C200CB55DE /* ArDancing */ = {
+		48159ABD21BE75C200CB55DE /* ArChristmas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48159AD221BE75C400CB55DE /* Build configuration list for PBXNativeTarget "ArDancing" */;
+			buildConfigurationList = 48159AD221BE75C400CB55DE /* Build configuration list for PBXNativeTarget "ArChristmas" */;
 			buildPhases = (
 				48159ABA21BE75C200CB55DE /* Sources */,
 				48159ABB21BE75C200CB55DE /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = ArDancing;
+			name = ArChristmas;
 			productName = ArDancing;
-			productReference = 48159ABE21BE75C200CB55DE /* ArDancing.app */;
+			productReference = 48159ABE21BE75C200CB55DE /* ArChristmas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 48159AB921BE75C200CB55DE /* Build configuration list for PBXProject "ArDancing" */;
+			buildConfigurationList = 48159AB921BE75C200CB55DE /* Build configuration list for PBXProject "ArChristmas" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48159ABD21BE75C200CB55DE /* ArDancing */,
+				48159ABD21BE75C200CB55DE /* ArChristmas */,
 			);
 		};
 /* End PBXProject section */
@@ -300,12 +300,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6ZBACQ976;
-				INFOPLIST_FILE = ArDancing/Info.plist;
+				INFOPLIST_FILE = ArChristmas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiro.ArDancing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiro.ArChristmas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,12 +318,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6ZBACQ976;
-				INFOPLIST_FILE = ArDancing/Info.plist;
+				INFOPLIST_FILE = ArChristmas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiro.ArDancing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiro.ArChristmas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48159AB921BE75C200CB55DE /* Build configuration list for PBXProject "ArDancing" */ = {
+		48159AB921BE75C200CB55DE /* Build configuration list for PBXProject "ArChristmas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48159AD021BE75C400CB55DE /* Debug */,
@@ -342,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48159AD221BE75C400CB55DE /* Build configuration list for PBXNativeTarget "ArDancing" */ = {
+		48159AD221BE75C400CB55DE /* Build configuration list for PBXNativeTarget "ArChristmas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48159AD321BE75C400CB55DE /* Debug */,

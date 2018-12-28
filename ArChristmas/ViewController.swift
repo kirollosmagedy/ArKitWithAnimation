@@ -93,7 +93,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let transform = hitTestResult.worldTransform
         let thirdColumn = transform.columns.3
         objectNode.position = SCNVector3(thirdColumn.x, thirdColumn.y, thirdColumn.z )
-        objectNode.scale = SCNVector3(0.05, 0.05, 0.05)
+        objectNode.scale = SCNVector3(0.09, 0.09, 0.09)
         
         // Add the node to the scene
         sceneView.scene.rootNode.addChildNode(objectNode)
